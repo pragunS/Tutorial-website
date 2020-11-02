@@ -226,9 +226,11 @@ module.exports = function(app, passport) {
         res.render('login', {
             session: req.user
         })
+       
 
 
     });
+    
 
     app.get('/a/execute', isLoggedIn, coursehandler.executePaypal);
 
